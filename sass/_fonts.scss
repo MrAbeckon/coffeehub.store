@@ -1,0 +1,151 @@
+$h1-fs: 75px;
+$h2-fs: 40px;
+$h3-fs: 35px;
+$h4-fs: 24px;
+$p-fs: 16px;
+$font: 'Helvetica Neue', sans-serif;
+$font-family: "Helvetica Neue";
+
+$white: #fff;
+$red: #e60000;
+$grey: #545454;
+$light-grey: #666666;
+$light-light-grey: #EBEBEB;
+$coffeehub-purple: #837e95;
+
+h1, h2, h3, h4, h5, p, li, a, button {
+	font-family: $font !important;
+}
+
+%h2 {
+	font-size: $h2-fs;
+}
+%h4 {
+	font-size: $h4-fs;
+}
+
+.navbar {
+	.nav-link {
+		font-size: 17px;
+		line-height: 18px;
+		font-weight: 300;
+		position: relative;
+		&:after {
+			position: absolute;
+			content: '';
+			height: 6px;
+			bottom: -8px;
+			margin: 0 auto;
+			left: 0;
+		  	right: 0;
+			width: 70%;
+			background: $light-light-grey;
+			opacity: 0;
+
+			transition: all 500ms ease-in-out;
+		}
+		&:hover &:after {
+			content: '';
+			height: 2px;
+			bottom: -4px;
+			margin: 0 auto;
+			left: 0;
+			right: 0;
+			width: 50%;
+			opacity: 1;
+		
+		}
+	}
+
+}
+
+
+.intro-bg {
+	h1 {
+		color: $white;
+		font-weight: 100;
+	}
+
+	h1:first-of-type{
+		font-size: $h1-fs;
+	}
+	h1:last-of-type{
+		font-size: 55px;
+	}
+	
+}
+
+#zvol-metodu {
+	.zvol-metodu-heading {
+		h2 {
+			@extend %h2;
+			text-transform: uppercase;
+			line-height: 30px;
+			color: $coffeehub-purple;
+			font-weight: bold;
+			position: relative;
+			
+			&:before {
+			position: absolute;
+			content: '';
+			height: 4px;
+			bottom: -4px;
+			margin: 0 auto;
+			left: 0;
+		  	right: 0;
+			width: 25%;
+			background-color: $coffeehub-purple;
+			
+			-o-transition:.5s;
+			-ms-transition:.5s;
+		  	-moz-transition:.5s;
+		  	-webkit-transition:.5s;
+		  	transition:.5s;
+			}
+		}
+	}
+}
+
+#carousel {
+	.carousel {
+		
+		h3 {
+			font-size: $h3-fs;
+			color: $red;
+		}
+
+		h4 {
+			@extend %h4;
+			color: $light-grey;
+		}
+
+		p {
+			line-height: 22px;
+			font-size: $p-fs;
+			color: #595858;
+		}
+
+	}
+}
+
+#kontakt {
+
+	h2 {
+		font-size: $h2-fs;
+		color: $red;
+	}
+	h4 {
+		@extend %h4;
+		line-height: 34px;
+		color: $light-light-grey;
+
+		a {
+			color: $red;
+		}
+	}
+}
+
+.underline {
+	text-decoration: underline;
+	text-decoration-thickness: 0.1em;
+}
