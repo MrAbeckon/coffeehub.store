@@ -8,7 +8,7 @@ $light-blue: #52afcc;
 	    width: 1200px !important;
 	}
 }
-header {
+#nheader {
 	background-color: #827e94;
 	position: fixed;
 	top: 0px;
@@ -100,6 +100,9 @@ header {
 	.affix.navbar {
 		.navbar-brand {
 			margin-left: -7vw;
+			img {
+				width: 220px;
+			}
 		}
 		ul.navbar-nav {
 			.nav-item {

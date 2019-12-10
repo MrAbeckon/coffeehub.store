@@ -1,4 +1,9 @@
+html {
 
+	scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+	scroll-snap-type: y mandatory;
+}
 .intro-bg {
 	display: flex;
 	flex-direction: column;
@@ -8,16 +13,19 @@
 	// height: 470px;
 	text-align: center;
 	padding: 0 30px;
-	margin-top: 100px;
+	// margin-top: 100px;
 	position: relative;
-    overflow: hidden;
+	overflow: hidden;
 
 	h1 {
 		position: absolute;
 		z-index: 10;
 		top: 40%;
 	}
-	video {
+	#main-video {
+
+		scroll-snap-align: start;
+		position: relative;
 		width: 100vw;
 		height: calc(100vh - 100px);
 		z-index: 1;
@@ -37,7 +45,7 @@
 			border-color: rgba(131,126,149,0.2);
 		}
 	}
-	.scroll-down {
+	#scroll-down {
 		position: absolute;
 		z-index: 10;
 		bottom: 65px;
@@ -72,5 +80,180 @@
 		h2 {
 			padding: 30px 0 25px;
 		}
+	}
+}
+#methods {
+	
+	// definitely style this
+	#methods-nav {
+		position: fixed;
+		height: 100%;
+		top: 10%;
+		right: 20px;
+		z-index: 10;
+		display: none;
+
+		// display: inline;
+		.methods-nav-wrapper {
+			display: flex;
+			align-items: center;
+			height: 100%;
+			ul {
+				width: 40px;
+				li {
+					width:40px;
+					height: 40px;
+					border-radius: 50%;
+					border: 2px solid white;
+					// box-shadow: 0 0 4px 0px black;
+
+					margin-bottom: 10px;
+					overflow: hidden;
+					img {
+						width: 100%;
+						// height: 100%;
+					}
+				}
+				li:not(.methods-nav-wrapper ul li:first-child){
+					opacity: 0.5;
+				}
+			}
+		}
+	}
+
+	.method-item {
+		width: 100%;
+		height: 100vh;
+		max-height: 100vh;
+		overflow: hidden;
+		scroll-snap-align: center;
+		position: relative;
+
+		// think about images that would fit in
+		&-media {
+			img {
+				// width: 100%;
+				height: 100%;
+				// test
+				// display: none;
+			}
+		}
+
+		// definitely style this
+		// think about prices and how would they fit in
+		&-content {
+			background-color: #827e94;
+			color: white;
+			padding: 200px 100px 40px;
+			font-size: 40px;
+
+			&-title {
+				margin: 20px 0 40px;
+				h2 {
+					font-weight: lighter;
+					font-size: 1.2em;
+				}
+			}
+			&-desc {
+				margin: 10px 0 50px;
+			}
+			&-links {
+				color : white;
+				padding-right: 100px;
+				display: flex;
+				justify-content: space-around;
+
+				&-button-1 {
+					flex-grow: 1;
+					transition-property: background, transform, top, box-shadow, border-color;
+					transition-duration: 0.2s;
+					transition-timing-function: linear;
+
+					display: inline-block;
+					top: 45px;
+					margin-top:-40px;
+					position: relative;
+
+					border-radius: 4px 4px 2px 2px;
+					border: 0.5px solid #b78e3f;
+					box-shadow: 0px 10px 12px -7px black;
+
+					cursor: pointer;
+
+					padding: 20px 40px;
+					background: #fff;
+					margin-right: 20px;
+					text-align: center;
+				}
+				&-button-2 {
+					flex-grow: 1;
+					transition-property: background, transform, top, box-shadow, border-color;
+					transition-duration: 0.2s;
+					transition-timing-function: linear;
+
+					display: inline-block;
+					top: 45px;
+					margin-top:-40px;
+					position: relative;
+
+					border-radius: 4px 4px 2px 2px;
+					border: 0.5px solid #f2f2f2;
+					box-shadow: 0px 10px 12px -7px black;
+
+					cursor: pointer;
+
+					padding: 20px 40px;
+					background: #b78e3f;
+					margin-right: 20px;
+					text-align: center;
+				}
+					/**/
+				@keyframes shake3D {
+					0% {transform: rotateZ(0deg);}
+					33%{transform: rotateZ(5deg);}
+					66%{transform: rotateZ(0deg);}
+					90%{transform: rotateZ(1deg);}
+				}
+				&-button-1:hover{
+					top: 49px;
+					background: #fff;
+					box-shadow: 0px 6px 12px -7px black;
+					border-color: #b78e3f;
+					animation: shake3D .4s linear;
+				}
+				&-button-2:hover{
+					top: 49px;
+					background: #b78e3f;
+					box-shadow: 0px 6px 12px -7px black;
+					border-color: #fff;
+					animation: shake3D .4s linear;
+				}
+				&-button-1:hover .linkA {
+					text-decoration: none;
+				}
+				&-button-2:hover .linkB{
+					color: white;
+					text-decoration: none;
+				}
+
+				.linkA{
+					color: #b78e3f;
+					transition: color .2s linear;
+					width: 100%;
+					height: 100%;
+					font-size: 0.85em;
+					font-weight: 200;
+				}	
+				.linkB {
+					color: white;
+					transition: color .2s linear;
+					width: 100%;
+					height: 100%;
+					font-size: 0.85em;
+					font-weight: lighter;
+				}
+			}
+		}
+
 	}
 }
