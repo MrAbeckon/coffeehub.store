@@ -312,8 +312,8 @@ h1, h2, h3, h4, h5, p, li, a, button {
   margin-left: -7vw;
 }
 /* line 103, ../sass/_navbar.scss */
-#nheader .affix.navbar .navbar-brand img {
-  width: 220px;
+#nheader .affix.navbar .navbar-brand #header-logo {
+  width: 250px;
 }
 /* line 108, ../sass/_navbar.scss */
 #nheader .affix.navbar ul.navbar-nav .nav-item {
@@ -495,7 +495,6 @@ html {
   box-shadow: 0px 10px 12px -7px black;
   cursor: pointer;
   padding: 20px 40px;
-  background: #fff;
   margin-right: 20px;
   text-align: center;
 }
@@ -511,10 +510,9 @@ html {
   position: relative;
   border-radius: 4px 4px 2px 2px;
   border: 0.5px solid #f2f2f2;
-  box-shadow: 0px 10px 12px -7px black;
+  box-shadow: 0 -2px 1px rgba(0, 0, 0, 0.09), 0 -4px 2px rgba(0, 0, 0, 0.09), 0 -8px 4px rgba(0, 0, 0, 0.09), 0 -16px 8px rgba(0, 0, 0, 0.09), 0 -32px 16px rgba(0, 0, 0, 0.09);
   cursor: pointer;
   padding: 20px 40px;
-  background: #b78e3f;
   margin-right: 20px;
   text-align: center;
 }
@@ -532,7 +530,7 @@ html {
     transform: rotateZ(1deg);
   }
 }
-/* line 217, ../sass/_intro.scss */
+/* line 220, ../sass/_intro.scss */
 #methods .method-item-content-links-button-1:hover {
   top: 49px;
   background: #fff;
@@ -540,7 +538,7 @@ html {
   border-color: #b78e3f;
   animation: shake3D .4s linear;
 }
-/* line 224, ../sass/_intro.scss */
+/* line 227, ../sass/_intro.scss */
 #methods .method-item-content-links-button-2:hover {
   top: 49px;
   background: #b78e3f;
@@ -548,16 +546,17 @@ html {
   border-color: #fff;
   animation: shake3D .4s linear;
 }
-/* line 231, ../sass/_intro.scss */
+/* line 234, ../sass/_intro.scss */
 #methods .method-item-content-links-button-1:hover .linkA {
+  color: #b78e3f;
   text-decoration: none;
 }
-/* line 234, ../sass/_intro.scss */
+/* line 238, ../sass/_intro.scss */
 #methods .method-item-content-links-button-2:hover .linkB {
   color: white;
   text-decoration: none;
 }
-/* line 239, ../sass/_intro.scss */
+/* line 243, ../sass/_intro.scss */
 #methods .method-item-content-links .linkA {
   color: #b78e3f;
   transition: color .2s linear;
@@ -566,7 +565,7 @@ html {
   font-size: 0.85em;
   font-weight: 200;
 }
-/* line 247, ../sass/_intro.scss */
+/* line 251, ../sass/_intro.scss */
 #methods .method-item-content-links .linkB {
   color: white;
   transition: color .2s linear;

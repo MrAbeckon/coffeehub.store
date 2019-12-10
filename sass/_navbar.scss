@@ -100,8 +100,8 @@ $light-blue: #52afcc;
 	.affix.navbar {
 		.navbar-brand {
 			margin-left: -7vw;
-			img {
-				width: 220px;
+			#header-logo {
+				width: 250px;
 			}
 		}
 		ul.navbar-nav {
