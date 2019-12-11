@@ -327,8 +327,20 @@ html {
   scroll-snap-type: y mandatory;
 }
 
-/* line 7, ../sass/_intro.scss */
-.intro-bg {
+/* line 8, ../sass/_intro.scss */
+#zvol-metodu {
+  height: 100vh;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+/* line 15, ../sass/_intro.scss */
+#zvol-metodu .zvol-metodu-heading h2 {
+  padding: 30px 0 25px;
+}
+
+/* line 22, ../sass/_intro.scss */
+#methods .intro-bg {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -338,15 +350,16 @@ html {
   padding: 0 30px;
   position: relative;
   overflow: hidden;
+  scroll-snap-align: start;
 }
-/* line 20, ../sass/_intro.scss */
-.intro-bg h1 {
+/* line 36, ../sass/_intro.scss */
+#methods .intro-bg h1 {
   position: absolute;
   z-index: 10;
   top: 40%;
 }
-/* line 25, ../sass/_intro.scss */
-.intro-bg #main-video {
+/* line 41, ../sass/_intro.scss */
+#methods .intro-bg #main-video {
   scroll-snap-align: start;
   position: relative;
   width: 100vw;
@@ -368,8 +381,8 @@ html {
     border-color: rgba(131, 126, 149, 0.2);
   }
 }
-/* line 48, ../sass/_intro.scss */
-.intro-bg #scroll-down {
+/* line 64, ../sass/_intro.scss */
+#methods .intro-bg #scroll-down {
   position: absolute;
   z-index: 10;
   bottom: 65px;
@@ -386,24 +399,11 @@ html {
   border-color: rgba(131, 126, 149, 0.2);
   animation: scrollNow 2000ms ease-in 1s infinite forwards;
 }
-/* line 67, ../sass/_intro.scss */
-.intro-bg #scroll-down img {
+/* line 83, ../sass/_intro.scss */
+#methods .intro-bg #scroll-down img {
   transform: translateY(2px);
 }
-
-/* line 73, ../sass/_intro.scss */
-#zvol-metodu {
-  height: 100vh;
-  text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-/* line 80, ../sass/_intro.scss */
-#zvol-metodu .zvol-metodu-heading h2 {
-  padding: 30px 0 25px;
-}
-
-/* line 88, ../sass/_intro.scss */
+/* line 90, ../sass/_intro.scss */
 #methods #methods-nav {
   position: fixed;
   height: 100%;
@@ -412,17 +412,17 @@ html {
   z-index: 10;
   display: none;
 }
-/* line 97, ../sass/_intro.scss */
+/* line 99, ../sass/_intro.scss */
 #methods #methods-nav .methods-nav-wrapper {
   display: flex;
   align-items: center;
   height: 100%;
 }
-/* line 101, ../sass/_intro.scss */
+/* line 103, ../sass/_intro.scss */
 #methods #methods-nav .methods-nav-wrapper ul {
   width: 40px;
 }
-/* line 103, ../sass/_intro.scss */
+/* line 105, ../sass/_intro.scss */
 #methods #methods-nav .methods-nav-wrapper ul li {
   width: 40px;
   height: 40px;
@@ -431,15 +431,15 @@ html {
   margin-bottom: 10px;
   overflow: hidden;
 }
-/* line 112, ../sass/_intro.scss */
+/* line 114, ../sass/_intro.scss */
 #methods #methods-nav .methods-nav-wrapper ul li img {
   width: 100%;
 }
-/* line 117, ../sass/_intro.scss */
+/* line 119, ../sass/_intro.scss */
 #methods #methods-nav .methods-nav-wrapper ul li:not(.methods-nav-wrapper ul li:first-child) {
   opacity: 0.5;
 }
-/* line 124, ../sass/_intro.scss */
+/* line 125, ../sass/_intro.scss */
 #methods .method-item {
   width: 100%;
   height: 100vh;
@@ -448,31 +448,53 @@ html {
   scroll-snap-align: center;
   position: relative;
 }
-/* line 134, ../sass/_intro.scss */
-#methods .method-item-media img {
-  height: 100%;
+@media (max-width: 768px) {
+  /* line 125, ../sass/_intro.scss */
+  #methods .method-item {
+    height: 150vh;
+    max-height: 150vh;
+  }
 }
-/* line 144, ../sass/_intro.scss */
+/* line 139, ../sass/_intro.scss */
+#methods .method-item-media img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+@media (max-width: 768px) {
+  /* line 139, ../sass/_intro.scss */
+  #methods .method-item-media img {
+    height: 50vh;
+  }
+}
+@media (max-width: 1000px) {
+  /* line 139, ../sass/_intro.scss */
+  #methods .method-item-media img {
+    object-position: right;
+  }
+}
+/* line 156, ../sass/_intro.scss */
 #methods .method-item-content {
   background-color: #827e94;
   color: white;
   padding: 200px 100px 40px;
   font-size: 40px;
 }
-/* line 150, ../sass/_intro.scss */
+/* line 162, ../sass/_intro.scss */
 #methods .method-item-content-title {
   margin: 20px 0 40px;
 }
-/* line 152, ../sass/_intro.scss */
+/* line 164, ../sass/_intro.scss */
 #methods .method-item-content-title h2 {
   font-weight: lighter;
   font-size: 1.2em;
 }
-/* line 157, ../sass/_intro.scss */
+/* line 169, ../sass/_intro.scss */
 #methods .method-item-content-desc {
   margin: 10px 0 50px;
 }
-/* line 160, ../sass/_intro.scss */
+/* line 172, ../sass/_intro.scss */
 #methods .method-item-content-links {
   color: white;
   padding-right: 100px;
@@ -480,7 +502,13 @@ html {
   justify-content: space-around;
   /**/
 }
-/* line 166, ../sass/_intro.scss */
+@media (max-width: 1013px) {
+  /* line 172, ../sass/_intro.scss */
+  #methods .method-item-content-links {
+    padding-right: 0;
+  }
+}
+/* line 181, ../sass/_intro.scss */
 #methods .method-item-content-links-button-1 {
   flex-grow: 1;
   transition-property: background, transform, top, box-shadow, border-color;
@@ -498,19 +526,17 @@ html {
   margin-right: 20px;
   text-align: center;
 }
-/* line 188, ../sass/_intro.scss */
+/* line 203, ../sass/_intro.scss */
 #methods .method-item-content-links-button-2 {
   flex-grow: 1;
-  transition-property: background, transform, top, box-shadow, border-color;
-  transition-duration: 0.2s;
-  transition-timing-function: linear;
+  transition: background, top, box-shadow, border-color 300ms linear, transform 600ms linear;
   display: inline-block;
   top: 45px;
   margin-top: -40px;
   position: relative;
   border-radius: 4px 4px 2px 2px;
   border: 0.5px solid #f2f2f2;
-  box-shadow: 0 -2px 1px rgba(0, 0, 0, 0.09), 0 -4px 2px rgba(0, 0, 0, 0.09), 0 -8px 4px rgba(0, 0, 0, 0.09), 0 -16px 8px rgba(0, 0, 0, 0.09), 0 -32px 16px rgba(0, 0, 0, 0.09);
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.1), 1px 1px 0px black, 2px 2px 0px black, 3px 3px 0px black, 4px 4px 0px black, 5px 5px 0px black, 6px 6px 0px black, 7px 7px 0px black, 8px 8px 0px black, 9px 9px 0px black, 10px 10px 0px black;
   cursor: pointer;
   padding: 20px 40px;
   margin-right: 20px;
@@ -518,19 +544,16 @@ html {
 }
 @keyframes shake3D {
   0% {
-    transform: rotateZ(0deg);
+    transform: translate(0, 0);
   }
   33% {
-    transform: rotateZ(5deg);
-  }
-  66% {
-    transform: rotateZ(0deg);
+    transform: translate(3px, 3px);
   }
   90% {
-    transform: rotateZ(1deg);
+    transform: translate(10px, 10px);
   }
 }
-/* line 220, ../sass/_intro.scss */
+/* line 249, ../sass/_intro.scss */
 #methods .method-item-content-links-button-1:hover {
   top: 49px;
   background: #fff;
@@ -538,25 +561,26 @@ html {
   border-color: #b78e3f;
   animation: shake3D .4s linear;
 }
-/* line 227, ../sass/_intro.scss */
+/* line 256, ../sass/_intro.scss */
 #methods .method-item-content-links-button-2:hover {
-  top: 49px;
+  transform: translate(10px, 10px);
   background: #b78e3f;
-  box-shadow: 0px 6px 12px -7px black;
-  border-color: #fff;
-  animation: shake3D .4s linear;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.1), 0 0 0 rgba(0, 0, 0, 0.1), 0 0 0 rgba(0, 0, 0, 0.1), 0 0 0 rgba(0, 0, 0, 0.1), 0 0 0 rgba(0, 0, 0, 0.1), 0 0 0 rgba(0, 0, 0, 0.1), 0 0 0 rgba(0, 0, 0, 0.1), 0 0 0 rgba(0, 0, 0, 0.1), 0 0 0 rgba(0, 0, 0, 0.1), 0 0 0 rgba(0, 0, 0, 0.1), 0 0 0 rgba(0, 0, 0, 0.1);
+  animation: shake3D .3s linear;
+  animation-direction: alternate;
+  animation-fill-mode: both;
 }
-/* line 234, ../sass/_intro.scss */
+/* line 276, ../sass/_intro.scss */
 #methods .method-item-content-links-button-1:hover .linkA {
   color: #b78e3f;
   text-decoration: none;
 }
-/* line 238, ../sass/_intro.scss */
+/* line 280, ../sass/_intro.scss */
 #methods .method-item-content-links-button-2:hover .linkB {
   color: white;
   text-decoration: none;
 }
-/* line 243, ../sass/_intro.scss */
+/* line 285, ../sass/_intro.scss */
 #methods .method-item-content-links .linkA {
   color: #b78e3f;
   transition: color .2s linear;
@@ -565,14 +589,14 @@ html {
   font-size: 0.85em;
   font-weight: 200;
 }
-/* line 251, ../sass/_intro.scss */
+/* line 293, ../sass/_intro.scss */
 #methods .method-item-content-links .linkB {
   color: white;
   transition: color .2s linear;
   width: 100%;
   height: 100%;
   font-size: 0.85em;
-  font-weight: lighter;
+  font-weight: 800;
 }
 
 /* line 1, ../sass/_carousel.scss */

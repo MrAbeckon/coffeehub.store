@@ -59,18 +59,18 @@ $(window).scroll(function() {
 	if ($('.navbar').offset().top > 150) {
 
 		// modify this so it can have a smooth transition between videos
-		$(window).one('scroll', function() {
+		// $(window).one('scroll', function() {
 			
-			if ($('.navbar').offset().top > 150) {
-				if (!trigger)
-					$('#main-video').attr('src', videoPath+"brewing_drops.mp4")
-				trigger = true;
-			} else {
-				if (trigger)
-					$('#main-video').attr('src', videoPath+"brewing_filter.mp4")
-				trigger = false;
-			}
-		});
+		// 	if ($('.navbar').offset().top > 150) {
+		// 		if (!trigger)
+		// 			$('#main-video').attr('src', videoPath+"brewing_drops.mp4")
+		// 		trigger = true;
+		// 	} else {
+		// 		if (trigger)
+		// 			$('#main-video').attr('src', videoPath+"brewing_filter.mp4")
+		// 		trigger = false;
+		// 	}
+		// });
 	}
 	if ($('.navbar').offset().top >= $('#chemex').offset().top){
 		// $('#methods-nav').show();
