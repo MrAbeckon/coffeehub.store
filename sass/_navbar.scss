@@ -35,8 +35,9 @@ $light-blue: #52afcc;
 		}
 
 		&-toggler {
+			outline-color: rgba(255,255,255,0.1);
 			border-radius: 2px;
-			background-color: #e60000;
+			// border
 			padding: 5px 10px;
 		}
 		ul.navbar-nav {
@@ -100,6 +101,9 @@ $light-blue: #52afcc;
 	.affix.navbar {
 		.navbar-brand {
 			margin-left: -7vw;
+			@media (max-width: 1051px) {
+				margin-left: 0;
+			}
 			#header-logo {
 				width: 250px;
 			}

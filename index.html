@@ -48,152 +48,210 @@
 	</header>
 		
 
-	<main>
+	<main class="container-fluid p-0" id="wrapper">
 
-		<div class="container-fluid p-0" id="methods">
+		<section class="intro-bg">
 
-			<section class="intro-bg">
+			<h1>Taste a good coffee<br><span class="underline">at home</span></h1> 
 
-				<h1>Taste a good coffee<br><span class="underline">at home</span></h1> 
-   
-			   <video id="main-video" src="assets/videos/brewing_filter.mp4" autoplay muted loop>
-				   <h2>ZVOL SI METODU</h2>
-			   </video>
-   
-			   <!-- <video src="assets/videos/brewing_filter_2.mp4" autoplay muted loop>
-				   Video by KML from Pexels
-				   Sorry, your browser doesn't support embedded videos.
-			   </video> -->
-   
-			   <!-- button for scrolling -->
-   
-			   <a href="#chemex">
-				   <div id="scroll-down">
-					   <img srcset="assets/icons/arrow-down.png, assets/icons/arrow-down-2x.png 2x" src="assets/icons/arrow-down.png" alt="down">
-				   </div>
-			   </a>
-   
+			<video id="main-video" src="assets/videos/brewing_filter.mp4" autoplay muted loop>
+				<h2>ZVOL SI METODU</h2>
+			</video>
+
+			<!-- <video src="assets/videos/brewing_filter_2.mp4" autoplay muted loop>
+				Video by KML from Pexels
+				Sorry, your browser doesn't support embedded videos.
+			</video> -->
+
+			<!-- button for scrolling -->
+
+			<a href="#chemex">
+				<div id="scroll-down">
+					<img srcset="assets/icons/arrow-down.png, assets/icons/arrow-down-2x.png 2x" src="assets/icons/arrow-down.png" alt="down">
+				</div>
+			</a>
+
+		</section>
+
+		<section id="methods-nav" class="method-section">
+			<div class="col-sm-1 methods-nav-wrapper">
+				<ul>
+					<!-- fill <li> with icons -->
+					<li>
+						<a href="#chemex">
+							<img class="round-icon" src="assets/icons/icon_ch.png">
+						</a>
+					</li>
+					<li>
+						<a href="#frenchpress">
+							<img class="round-icon" src="assets/icons/icon_mk.png">
+						</a>
+					</li>
+					<li>
+						<a href="#aeropress">
+							<img class="round-icon" src="assets/icons/icon_ae.png">
+						</a>
+					</li>
+					<li>
+						<a href="#chemex">
+							<img class="round-icon" src="assets/icons/icon_fp.png">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="row method-item method-section m-0" id="chemex">
+			<!-- QUESTION jezis -->
+			<!-- <section id="methods-nav"> - is this correct to put here? or up there -->
+			<section class="col-sm-12 col-md-4 method-item-media p-0 mb-lg-0 mb-md-3 mb-sm-5 mb-5">
+				<img src="assets/imgs/chemex-small.jpg" srcset="assets/imgs/chemex_small.jpg 525w, assets/imgs/chemex.jpg 760w, assets/imgs/chemex-2x.jpg 1520w, assets/imgs/chemex-3x.jpg 2280w" alt="chemex getting ready">
 			</section>
+			<section class="col-sm-12 col-md-8 method-item-content">
+				<header class="method-item-content-title">
+					<h2>CHEMEX</h2>
+					<!-- <p></p> -->
+				</header>
+				<article class="method-item-content-desc">
+					<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, totam dolore maiores aut commodi porro adipisci 
+						vitae iste, maxime obcaecati, excepturi vel expedita atque eligendi veritatis quasi repellat? Omnis, vel?
+					</p>
+				</article>
+				<article class="method-item-content-links">
+					<div class="button-2">
+						<a href="buy" class="link-big">kúpiť</a>
+					</div>
+					<div class="button-2">
+						<a href="#" class="link-big">návod</a>
+					</div>
+				</article>
 
-			<section id="methods-nav" class="method-section">
-				<div class="col-sm-1 methods-nav-wrapper">
-					<ul>
-						<!-- fill <li> with icons -->
-						<li>
-							<a href="#chemex">
-								<img class="round-icon" src="assets/icons/icon_ch.png">
-							</a>
-						</li>
-						<li>
-							<a href="#frenchpress">
-								<img class="round-icon" src="assets/icons/icon_mk.png">
-							</a>
-						</li>
-						<li>
-							<a href="#aeropress">
-								<img class="round-icon" src="assets/icons/icon_ae.png">
-							</a>
-						</li>
-						<li>
-							<a href="#chemex">
-								<img class="round-icon" src="assets/icons/icon_fp.png">
-							</a>
-						</li>
-					</ul>
+
+			</section>
+		</section>
+
+		<section class="row method-item method-section m-0" id="frenchpress">
+			<!-- QUESTION jezis -->
+			<!-- <section id="methods-nav"> - is this correct to put here? or up there -->
+			<section class="col-sm-12 col-md-4 method-item-media p-0 mb-lg-0 mb-md-3 mb-sm-5 mb-5">
+					<img src="assets/imgs/frenchpress.jpg">
+			</section>
+			<section class="col-sm-12 col-md-8 method-item-content">
+				<header class="method-item-content-title">
+					<h2>FRENCHPRESS</h2>
+					<!-- <p></p> -->
+				</header>
+				<article class="method-item-content-desc">
+					<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, totam dolore maiores aut commodi porro adipisci 
+						vitae iste, maxime obcaecati, excepturi vel expedita atque eligendi veritatis quasi repellat? Omnis, vel?
+					</p>
+				</article>
+				<article class="method-item-content-links">
+					<div class="button-2">
+						<a href="#" class="link-big">kúpiť</a>
+					</div>
+					<div class="button-2">
+						<a href="#" class="link-big">návod</a>
+					</div>
+				</article>
+
+
+			</section>
+		</section>
+
+		<section class="row method-item method-section m-0" id="aeropress">
+			<!-- QUESTION jezis -->
+			<!-- <section id="methods-nav"> - is this correct to put here? or up there -->
+			<section class="col-sm-12 col-md-4 method-item-media p-0 mb-lg-0 mb-md-3 mb-sm-5 mb-5">
+				<img src="assets/imgs/aeropress.jpg">
+			</section>
+			<section class="col-sm-12 col-md-8 method-item-content">
+				<header class="method-item-content-title">
+					<h2>AEROPRESS</h2>
+					<!-- <p></p> -->
+				</header>
+				<article class="method-item-content-desc">
+					<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, totam dolore maiores aut commodi porro adipisci 
+						vitae iste, maxime obcaecati, excepturi vel expedita atque eligendi veritatis quasi repellat? Omnis, vel?
+					</p>
+				</article>
+				<article class="method-item-content-links">
+						<div class="button-2">
+						<a href="#" class="link-big">kúpiť</a>
+					</div>
+					<div class="button-2">
+						<a href="#" class="link-big">návod</a>
+					</div>
+				</article>
+
+
+			</section>
+		</section>
+
+		<section class="row eshop eshop-content-table m-0" id="eshop">
+			<!-- QUESTION jezis -->
+			<!-- <section id="methods-nav"> - is this correct to put here? or up there -->
+			<!-- <section class="col-sm-12 col-md-4 method-item-media p-0 mb-lg-0 mb-md-3 mb-sm-5 mb-5">
+				<img src="assets/imgs/aeropress.jpg">
+			</section> -->
+			<section class="col-sm-12 col-md-12 mb-5 eshop-content">
+					<header class="eshop-content-title">
+						<h2>Populárne objednávky:</h2>
+						<!-- <p></p> -->
+					</header>
+			</section>
+			<article class="col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-lg-5 mb-md-5 mb-sm-5 mb-5 eshop-content eshop-content-table-item">
+				<div class="eshop-content-wrapper button-img">
+					<img class=""  src="assets/imgs/products/kettle.jpeg">
+					<article class="eshop-content-table-item-desc">
+						<h3>Kettle</h3>
+						<h4>€ 38,00</h4>
+						<h5>Na sklade: <span>4</span>ks</h5>
+					</article>
+				</div>
+			</article>
+			<article class="col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-lg-5 mb-md-5 mb-sm-5 mb-5 eshop-content eshop-content-table-item">
+				<div class="eshop-content-wrapper button-img">
+					<img class=""  src="assets/imgs/products/grinder.jpeg">
+					<article class="eshop-content-table-item-desc">
+						<h3>Grinder</h3>
+						<h4>€ 280,00</h4>
+						<h5>Na sklade: <span>2</span>ks</h5>
+					</article>
+				</div>
+			</article>
+			<article class="col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-lg-5 mb-md-5 mb-sm-5 mb-5 eshop-content eshop-content-table-item">
+				<div class="eshop-content-wrapper button-img">
+					<img class="" src="assets/imgs/products/v60filters.jpeg">
+					<article class="eshop-content-table-item-desc">
+						<h3>Filters</h3>
+						<h4>€ 4,00</h4>
+						<h5>Na sklade: <span>10</span>ks</h5>
+					</article>
+				</div>
+			</article>
+			<article class="col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-lg-5 mb-md-5 mb-sm-5 mb-5 eshop-content eshop-content-table-item">
+				<div class="eshop-content-wrapper button-img">
+					<img class=""  src="assets/imgs/products/dripper.jpg">
+					<article class="eshop-content-table-item-desc">
+						<h3>Dripper</h3>
+						<h4>€ 3,30</h4>
+						<h5>Na sklade: <span>8</span>ks</h5>
+					</article>
+				</div>
+			</article>
+
+			<section id="eshop-gotoshop" class="col-sm-12 col-md-12 mb-lg-0 mb-md-3 mb-sm-5 mb-5 eshop-content eshop-content-table-item">
+				<div class="button-3">
+					<a href="#" class="link-big">prejsť do obchodu</a>
 				</div>
 			</section>
 
-			<section class="row method-item method-section m-0" id="chemex">
-				<!-- QUESTION jezis -->
-				<!-- <section id="methods-nav"> - is this correct to put here? or up there -->
-				<section class="col-sm-12 col-md-4 method-item-media p-0 mb-lg-0 mb-md-3 mb-sm-5 mb-5">
-					<img src="assets/imgs/chemex-small.jpg" srcset="assets/imgs/chemex_small.jpg 525w, assets/imgs/chemex.jpg 760w, assets/imgs/chemex-2x.jpg 1520w, assets/imgs/chemex-3x.jpg 2280w" alt="chemex getting ready">
-				</section>
-				<section class="col-sm-12 col-md-8 method-item-content mb-lg-0 mb-md-3 mb-sm-5 mb-5">
-					<header class="method-item-content-title">
-						<h2>CHEMEX</h2>
-						<!-- <p></p> -->
-					</header>
-					<article class="method-item-content-desc">
-						<p>
-							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, totam dolore maiores aut commodi porro adipisci 
-							vitae iste, maxime obcaecati, excepturi vel expedita atque eligendi veritatis quasi repellat? Omnis, vel?
-						</p>
-					</article>
-					<article class="method-item-content-links">
-						<div class="method-item-content-links-button-2">
-							<a href="guide" class="linkB">kúpiť</a>
-						</div>
-						<div class="method-item-content-links-button-2">
-							<a href="guide" class="linkB">návod</a>
-						</div>
-					</article>
+		</section>
 
-
-				</section>
-			</section>
-
-			<section class="row method-item method-section m-0" id="frenchpress">
-				<!-- QUESTION jezis -->
-				<!-- <section id="methods-nav"> - is this correct to put here? or up there -->
-				<section class="col-sm-12 col-md-4 method-item-media p-0 mb-lg-0 mb-md-3 mb-sm-5 mb-5">
-						<img src="assets/imgs/frenchpress.jpg">
-				</section>
-				<section class="col-sm-12 col-md-8 method-item-content mb-lg-0 mb-md-3 mb-sm-5 mb-5">
-					<header class="method-item-content-title">
-						<h2>FRENCHPRESS</h2>
-						<!-- <p></p> -->
-					</header>
-					<article class="method-item-content-desc">
-						<p>
-							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, totam dolore maiores aut commodi porro adipisci 
-							vitae iste, maxime obcaecati, excepturi vel expedita atque eligendi veritatis quasi repellat? Omnis, vel?
-						</p>
-					</article>
-					<article class="method-item-content-links">
-						<div class="method-item-content-links-button-2">
-							<a href="guide" class="linkB">kúpiť</a>
-						</div>
-						<div class="method-item-content-links-button-2">
-							<a href="guide" class="linkB">návod</a>
-						</div>
-					</article>
-
-
-				</section>
-			</section>
-
-			<section class="row method-item method-section m-0" id="aeropress">
-				<!-- QUESTION jezis -->
-				<!-- <section id="methods-nav"> - is this correct to put here? or up there -->
-				<section class="col-sm-12 col-md-4 method-item-media p-0 mb-lg-0 mb-md-3 mb-sm-5 mb-5">
-					<img src="assets/imgs/aeropress.jpg">
-				</section>
-				<section class="col-sm-12 col-md-8 method-item-content mb-lg-0 mb-md-3 mb-sm-5 mb-5">
-					<header class="method-item-content-title">
-						<h2>AEROPRESS</h2>
-						<!-- <p></p> -->
-					</header>
-					<article class="method-item-content-desc">
-						<p>
-							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, totam dolore maiores aut commodi porro adipisci 
-							vitae iste, maxime obcaecati, excepturi vel expedita atque eligendi veritatis quasi repellat? Omnis, vel?
-						</p>
-					</article>
-					<article class="method-item-content-links">
-							<div class="method-item-content-links-button-2">
-							<a href="guide" class="linkB">kúpiť</a>
-						</div>
-						<div class="method-item-content-links-button-2">
-							<a href="guide" class="linkB">návod</a>
-						</div>
-					</article>
-
-
-				</section>
-			</section>
-
-		</div>
 
 		<!-- <div class="container-fluid">
 			<section class="row" id="carousel">
@@ -248,11 +306,11 @@
 	<footer id="footer" class="container-fluid">
 		<nav class="navbar navbar-expand-lg navbar-dark">
 			<a class="navbar-brand" href="#">
-				<img src="assets/imgs/logo_footer.png" srcset="assets/imgs/logo_footer.png, assets/imgs/logo_footer-2x.png 2x, assets/imgs/logo_footer-3x.png 3x" alt="logo" width="171">
+				<!-- <img src="assets/imgs/logo_footer.png" srcset="assets/imgs/logo_footer.png, assets/imgs/logo_footer-2x.png 2x, assets/imgs/logo_footer-3x.png 3x" alt="logo" width="171"> -->
 			</a>
 
 			<ul class="nav navbar-nav ml-auto">
-				<li class="nav-item active">
+				<!-- <li class="nav-item active">
 					<a class="nav-link" href="#">úvod</a>
 				</li>
 
@@ -274,7 +332,7 @@
 
 				<li class="nav-item">
 					<a class="nav-link" href="#">pro klienty</a>
-				</li>
+				</li> -->
 
 			</ul>
 			

@@ -54,6 +54,11 @@ $('a').each(function(){
 		hash = $(this)[0].hash;
 	})
 });
+$('.method-item-content-links-button-2').click(function() {
+	console.log($(this).children('a')[0].hash)
+
+	window.location.replace($(this).children('a')[0].hash);
+})
 
 $(window).scroll(function() {
 	if ($('.navbar').offset().top > 150) {
