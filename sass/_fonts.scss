@@ -127,25 +127,3 @@ h1, h2, h3, h4, h5, p, li, a, button {
 
 	}
 }
-
-#kontakt {
-
-	h2 {
-		font-size: $h2-fs;
-		color: $red;
-	}
-	h4 {
-		@extend %h4;
-		line-height: 34px;
-		color: $light-light-grey;
-
-		a {
-			color: $red;
-		}
-	}
-}
-
-.underline {
-	text-decoration: underline;
-	text-decoration-thickness: 0.1em;
-}

@@ -1,0 +1,26 @@
+#wrapper {
+    #counter {
+        width: 100%;
+        height: 93vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+        padding: 0 60px;
+        h2 {
+            text-align: center;
+        }
+        h1 {
+            width: 100%;
+            text-align: center;
+            font-size: 2em;
+        }
+    }
+}
+.eshop-footer {
+    height: 7vh;
+    @media (max-width: 527px) {
+        height: auto;
+    }
+}

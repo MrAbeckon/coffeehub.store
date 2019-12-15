@@ -7,7 +7,16 @@
 // Possible fail to enable scrolling
 html {
 	scroll-behavior: smooth;
-  }
+	overflow: hidden;
+	height: 100%;
+	scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+	scroll-snap-type: y mandatory;
+}
+body{
+	overflow: auto;
+	height: 100%;
+}
 main {
 	background-color: #f2f2f2;
 }
@@ -15,6 +24,8 @@ main {
 @import "fonts";
 @import "navbar";
 @import "intro";
+@import "product";
+@import "eshop";
+@import "contact";
 @import "carousel";
-@import "kontakt";
 @import "footer";

@@ -15,6 +15,7 @@ $light-blue: #52afcc;
 	left: 0px;
 	width: 100%;
 	z-index: 100;
+	scroll-snap-align: start;
 
 	.navbar {
 		.navbar-brand {
@@ -46,7 +47,7 @@ $light-blue: #52afcc;
 			.nav-item {
 				padding: 65px 20px 58px;
 
-				.nav-link, .nav-link:visited {
+				.nav-link, .nav-link:visited, .dropdown-item {
 					padding-left: 0;
 					padding-right: 0;
 					color: $light-light-grey;
@@ -65,9 +66,22 @@ $light-blue: #52afcc;
 					a {font-size: 16px;}
 				}
 			}
-
 			.nav-item.active {
-				a {color: #e60000;}
+				.nav-link {
+					font-weight: bold;
+				}
+			}
+			.dropdown {
+				&-menu {
+					background-color: #827e94;
+					text-align: center;
+					border: none;
+					@media(min-width: 991px) {
+						padding: 20px;
+						top: 83%;
+						left: -30px;
+					}
+				}
 			}
 
 			#language-option {
