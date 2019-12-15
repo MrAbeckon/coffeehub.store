@@ -1,12 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+	<meta charset="utf-8">
+	<title>Contact | Coffeehub.store</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
 </head>
 <body>
-    <!-- make kontaktni formular s validaci -->
+
+	<!-- NAVIGATION -->
+	<header id="nheader">
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-dark">
+				<a class="navbar-brand pl-0 pr-100" href="#">
+					<img srcset="assets/imgs/logo.png, assets/imgs/logo-2x.png 2x, assets/imgs/logo-3x.png 3x"
+					src="assets/imgs/logo.png" alt="logo-coffeehub.store" id="header-logo">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+					<ul class="nav navbar-nav ml-auto">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#chemex" role="button" aria-haspopup="true" aria-expanded="false">methods</a>				
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="index.html#chemex">chemex</a>
+								<a class="dropdown-item" href="index.html#frenchpress">frenchpress</a>
+								<a class="dropdown-item" href="index.html#aeropress">aeropress</a>
+							</div>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="index.html#team">team</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="eshop.html">e-shop</a>
+						</li>
+
+						<li class="nav-item active">
+							<a class="nav-link" href="#">kontakt</a>
+						</li>
+
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+		
+
+	<main class="container-fluid p-0" id="wrapper">
+        <section class="row m-0 contact" id="kontakt">
+			<div class="col-sm-12 col-md-12">
+				<h2 class="mb-5">CONTACT US</h2>
+			</div>
+			<section class="col-sm-12 col-lg-5 text-sm-center text-lg-left" id="map">
+				<p>Where are we located?</p>
+				<img src="assets/imgs/map.png" srcset="assets/imgs/map.png, assets/imgs/map-2x.png 2x" alt="map">
+			</section>
+			<section class="col-sm-12 col-lg-7">
+				<p>Want to contact us now? Just drop us a line below.</p>
+
+				<form action="" method="post" id="contact-form">
+					<textarea id="message" name="message" placeholder="Leave us a message..."></textarea>
+					<input type="email" id="email" pattern=".+@.*" placeholder="you@mail.com" required>
+					<button type="submit" id="submit" class="button-4">SEND</button>
+
+				</form>
+			</section>
+		</section>
+	</main>
+
+	<footer id="footer">
+		<div class="adresa">
+			<p>
+				<span>Adresa:</span> Studentská 1770/1, 708 00 Ostrava-Poruba, Česko
+			</p>
+		</div>
+		<div class="copyright">
+			<p>
+				copyright &copy; 2019 Martin Albert
+			</p>
+		</div>
+	</footer>
+	
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+
 </body>
 </html>
